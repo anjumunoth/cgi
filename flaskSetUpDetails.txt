@@ -1,0 +1,42 @@
+1.  Create the project folder -- shoppingCart
+2.  Create the virtual env
+    mkdir shoppingCart
+    cd shoppingCart
+    python -m venv venv
+3. Activate the virtual env
+    venv/Scripts/activate
+(Linux) source venv/bin/activate
+A command prompt integrated with venv will open
+
+4. Install flask
+	pip install flask
+
+5. Create the package mypackage
+	It should consists of a file __init__.py
+    mkdir mypackage
+
+6. Create a file called as __init__.py in mypackage folder
+ Write the code for the initialisation of the package
+
+7. Create a routes.py in mypackage folder
+Write the routes required for the app
+
+8. Create the main app file mainShoppingCart.py at the root dir(shoppingCart)
+
+9. Set up the environment var in a file
+pip install python-dotenv
+
+Create a file .flaskenv in the root dir (shoppingCart)
+
+Set up the env var
+FLASK_APP=mainShoppingCart.py
+
+10. Go the integrated cmd prompt
+flask run
+
+
+
+
+
+
+
