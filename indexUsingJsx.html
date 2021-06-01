@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+</head>
+<body>
+    <h1> React with JSX</h1>
+    <div id="root"></div>
+    <script type="text/babel">
+        // transpiler -- babel
+        var rootElement=document.getElementById("root");
+        var h1Element=<h1>Welcome to react with jsx</h1>;// React.createElement
+        var anchorElement=<a href="https://reactjs.org/docs/cdn-links.html">Go To CDN </a>
+        var divElement=<div>
+            <h1>Welcome to react with jsx</h1>
+            <a href="https://reactjs.org/docs/cdn-links.html">Go To CDN </a>
+            </div>
+        ReactDOM.render(divElement,rootElement);
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+</head>
+<body>
+    <h1> Example using React and js</h1>
+    <div id="root"></div>
+    <script>
+        // cdn -- content delivery network
+        // where i want to render the react stuff
+        var rootElement=document.getElementById("root");
+        // return the virtual dom
+        // what i want to render
+        // <h1> Welcome to react </h1>
+        // 3params, type of element, attributes for element,children
+        var h1Element=React.createElement("h1",null,"Welcome to React")
+        //<a href="https://reactjs.org/docs/cdn-links.html">GO to CDN</a>
+        var anchorElement=React.createElement("a",{href:"https://reactjs.org/docs/cdn-links.html"},"Go To React CDN")
+        // 2 params for render ; what to render; where to render
+        var divElement=React.createElement("div",null,[h1Element,anchorElement])
+        ReactDOM.render(divElement,rootElement)
+    </script>
+</body>
+</html>

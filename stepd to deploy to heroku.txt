@@ -1,0 +1,65 @@
+1. In the root dir, created an empty git repos
+git init
+2. Create .gitignore -- which all files to ignore
+venv
+__pycache__
+
+3. Add teh dependencies to the requirements.txt
+
+python -m pip freeze > requirements.txt
+
+4. Create an account in heroku and create an app as well.
+
+5. Option to download the heroku cli
+
+6.
+Open a command prompt and login
+heroku login
+
+7. Gunicorn server -- WSGI http server
+In the integreated terminal give the foll commands
+python -m pip install gunicorn          
+
+8. To add all the dependencies added using pip install in our virtual env to a file called as requirements.txt
+
+python -m pip freeze > requirements.txt
+
+9. Create another file called as Procfile
+Tell the gunicorn server, which is our main file to execute
+python mainProjectFile.py
+web: gunicorn app:app
+
+10. Go add the new app created in heroku to the git
+
+ heroku git:remote -a cgi-new-python-second-project
+
+11. git push heroku master
+
+# 3 router files
+# amazon
+
+# compile -- interpreted
+python filename
+
+# unit testing, sockets, integrating c++
+
+django 
+python with data science -- pandas 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
